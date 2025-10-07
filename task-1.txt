@@ -52,3 +52,28 @@ LLM Araçlarından Aldığım Yardımlar;
 Soru: Bir algoritma yazarken nelere dikkat edilmeli? mesela "Mükemmel bir omlet nasıl yapılır?" bunun algoritmasını yazabilir misin?
 Cevap: “Algoritmayı, insan eylemlerini soyut bir işlem sırasına çevir. Her eylemi bir adım olarak yaz, karar noktalarını (if / else) mantıksal şekilde göster. Örneğin, ‘eğer tava çok ısındıysa → ateşi kıs’ gibi.”
 
+
+Farklı Çözüm Yolları Tartışması
+
+Yöntem 1 – Sabit Zamanlı Yaklaşım:
+Omleti her zaman aynı sürede pişir.
+    ·Avantaj: Kolay uygulanır.
+    ·Dezavantaj: Her ocak veya tava farklı ısıtır, sonuç değişebilir.
+
+Yöntem 2 – Gözleme Dayalı Yaklaşım:
+Pişme durumuna göre süreyi dinamik olarak ayarla (örneğin: “eğer kenarlar beyazlaştıysa → çevir”).
+    ·Avantaj: Gerçek duruma uyum sağlar.
+    ·Dezavantaj: Deneyim ister, ölçmesi zordur.
+
+Yöntem 3 – Akıllı Sensör Yaklaşımı (ileri seviye):
+Isı sensörü veya zamanlayıcı ile sıcaklığı otomatik ayarlayan sistem.
+    ·Avantaj: Tutarlılık yüksek.
+    ·Dezavantaj: Teknoloji gerektirir, maliyetli.
+
+
+
+
+
+
+
+
