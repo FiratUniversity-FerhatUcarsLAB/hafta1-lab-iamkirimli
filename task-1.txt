@@ -1,4 +1,54 @@
-Öğrenci No:
-AD-SOYAD:
+Öğrenci No: 250542027
+AD-SOYAD: Mehmet Ali Kırımlı
 
 Lütfen seçtiğiniz algoritmaya ait çözümü ve diğer isterleri aşağıya ekleyiniz:
+
+Problem:
+  Sabah kahvaltısı için mükemmel omleti yapmak istiyoruz.
+
+Amaç:
+  Omlet yapma sürecini sistematik hâle getirmek; malzeme hazırlığından pişirme zamanlamasına kadar her adımı optimize etmek.
+
+Girdiler (Input):
+  ·Yumurta sayısı
+  ·Süt veya su miktarı
+  ·Tuz, baharat, yağ türü
+  ·Ek malzemeler (peynir, sebze, sucuk vb.)
+  ·Tavaya ve ocak gücüne ait bilgiler
+
+Çıktı (Output):
+  ·İstenen kıvamda, lezzetli, yanmamış bir omlet
+
+Algoritma: Mükemmel_Omlet_Yapma
+
+1. Başla
+2. Malzemeleri hazırla
+    2.1. Yumurta sayısını belirle
+    2.2. Tuz, süt ve isteğe bağlı malzemeleri seç
+3. Karışımı oluştur
+    3.1. Yumurtaları bir kaba kır
+    3.2. Tuz ve sütü ekle
+    3.3. Çatal veya çırpıcıyla iyice karıştır
+4. Tavayı hazırla
+    4.1. Tavayı ocağa koy
+    4.2. Ocağı orta sıcaklığa ayarla
+    4.3. Yağı ekle ve ısınmasını bekle
+5. Omleti pişir
+    5.1. Karışımı tavaya dök
+    5.2. 30 saniye kadar sabit bekle, kenarların pişmesini izle
+    5.3. Kenarlar katılaşınca spatula ile hafifçe kenarları kaldır
+    5.4. İsteğe göre iç malzemeleri ekle
+6. Omleti kapat
+    6.1. Alt taraf kızarınca omleti ikiye katla
+    6.2. 10-15 saniye daha pişir
+7. Ocaktan al
+    7.1. Omleti tabağa koy
+    7.2. Üzerine isteğe göre süsleme yap (maydanoz, karabiber)
+8. Sonuç: Mükemmel kıvamda omlet
+9. Bitir
+
+
+LLM Araçlarından Aldığım Yardımlar;
+Soru: Bir algoritma yazarken nelere dikkat edilmeli? mesela "Mükemmel bir omlet nasıl yapılır?" bunun algoritmasını yazabilir misin?
+Cevap: “Algoritmayı, insan eylemlerini soyut bir işlem sırasına çevir. Her eylemi bir adım olarak yaz, karar noktalarını (if / else) mantıksal şekilde göster. Örneğin, ‘eğer tava çok ısındıysa → ateşi kıs’ gibi.”
+
