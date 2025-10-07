@@ -38,4 +38,29 @@ Selection Sort ise her turda minimum veya maksimum değeri bulup başa koyar.
 Eğitim amaçlı ödevlerde Bubble Sort, anlaşılabilirlik açısından daha uygundur.”
 
 
+Alternatif Çözüm Yolları
+
+Bubble Sort
+  Komşu elemanları karşılaştırarak sıralar
+  Basit ve anlaşılır
+  Büyük veri setlerinde yavaş
+
+
+Selection Sort
+  Her döngüde en yüksek notu bulup başa koyar 
+  Az değişim yapar
+  Hâlâ O(n²) karmaşıklıkta
+
+
+Python Sort (built-in)
+  Hazır sıralama fonksiyonu (sorted(list, reverse=True))
+  Hızlı ve pratik
+  Algoritmik öğrenme amaçlı uygun değil
+
+
+
+
+
+
+
 
