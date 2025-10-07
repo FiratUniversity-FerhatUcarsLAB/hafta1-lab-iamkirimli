@@ -1,4 +1,48 @@
-Öğrenci No:
-AD-SOYAD:
+Öğrenci No: 250542027  
+AD-SOYAD: Mehmet Ali Kırımlı
 
 Lütfen seçtiğiniz algoritmaya ait çözümü ve diğer isterleri aşağıya ekleyiniz:
+
+Problem:
+  ·Bir Sudoku bulmacası 9x9’luk bir ızgaradan oluşur. Her satır, sütun ve 3x3 alt karede 1’den 9’a kadar rakamlar bir kez yer almalıdır.
+
+Amaç:
+  ·Geçerli kurallara uyan bir çözüm bulmak — yani Sudoku’yu eksiksiz ve hatasız tamamlamak.
+
+Girdiler (Input):
+  ·9x9 Sudoku tahtası (bazı hücreler dolu, bazıları boş)
+
+Çıktı (Output):
+  ·Tamamlanmış, kurallara uygun bir Sudoku ızgarası
+
+Kurallar:
+  ·Aynı satırda rakamlar tekrarlanamaz
+  ·Aynı sütunda rakamlar tekrarlanamaz
+  ·Aynı 3x3 kutuda rakamlar tekrarlanamaz
+
+Kısıtlar:
+  ·Başlangıçta verilen rakamlar değiştirilemez
+  ·Çözüm benzersiz olmalıdır
+
+
+Algoritma: Sudoku_Cozme
+
+1. Başla
+2. Sudoku tahtasını oku
+3. Eğer tüm hücreler doluysa:
+      3.1. Çözüm bulundu → dur
+   Aksi halde:
+      3.2. Boş bir hücre bul
+4. 1’den 9’a kadar rakamları sırayla dene:
+      4.1. Eğer rakam satırda, sütunda ve 3x3 kutuda yoksa:
+              - Hücreye rakamı yerleştir
+              - Sudoku_Cozme’yi yeniden çağır (özyineleme)
+              - Eğer çözüm bulunduysa → dur
+              - Eğer çözüm bulunamazsa → hücreyi boş bırak (geri dön)
+5. Tüm rakamlar denenmişse ve geçerli çözüm yoksa → geri dön (backtrack)
+6. Çözüm tamamlandığında Sudoku tahtasını yazdır
+7. Bitir
+
+LLM Cevabı: Sudoku çözümü aslında bir geri izleme (backtracking) algoritmasıdır.
+Yani bir hücreye sayı koyarsın, kuralları ihlal etmiyorsa devam edersin, ihlal ederse geri dönüp başka sayı denersin.
+Kod değil, mantığı adım adım yazman yeterli.
