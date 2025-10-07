@@ -46,3 +46,26 @@ Algoritma: Sudoku_Cozme
 LLM Cevabı: Sudoku çözümü aslında bir geri izleme (backtracking) algoritmasıdır.
 Yani bir hücreye sayı koyarsın, kuralları ihlal etmiyorsa devam edersin, ihlal ederse geri dönüp başka sayı denersin.
 Kod değil, mantığı adım adım yazman yeterli.
+
+
+Farklı Çözüm Yolları Tartışması
+
+Yöntem 1 – Geri İzleme (Backtracking):
+En klasik yaklaşım. Hücrelere sırayla rakam yerleştirip yanlış durumlarda geri dönülür.
+    ·Avantaj: Her Sudoku’yu çözebilir.
+    ·Dezavantaj: Büyük Sudoku’larda zaman alır.
+
+Yöntem 2 – Mantıksal Çıkarım (Logical Deduction):
+“Bu hücreye yalnızca 5 gelebilir çünkü satır/sütun/3x3’te başka rakam yok” mantığıyla ilerlenir.
+    ·Avantaj: İnsan çözme mantığına yakındır, hızlıdır.
+    ·Dezavantaj: Tüm bulmacalarda işe yaramayabilir.
+
+Yöntem 3 – Hibrit Yaklaşım:
+Önce mantıksal çıkarımlarla kolay hücreleri doldur, sonra zor kalanlar için backtracking uygula.
+    ·Avantaj: En verimli çözüm.
+    ·Dezavantaj: Uygulaması biraz daha karmaşıktır.
+
+
+
+
+
