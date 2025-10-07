@@ -1,4 +1,56 @@
-Öğrenci No:
-AD-SOYAD:
+Öğrenci No: 250542027
+AD-SOYAD: Mehmet Ali Kırımlı
 
 Lütfen seçtiğiniz algoritmaya ait çözümü ve diğer isterleri aşağıya ekleyiniz:
+
+İdeal Kahve Demleme Algoritması
+1. Problemi Analiz Et
+Amaç: Mümkün olan en iyi lezzeti ve kıvamı elde etmek için standart bir filtre kahve makinesi veya pour-over (V60, Chemex vb.) yöntemi kullanarak kahve demleme sürecini optimize eden bir algoritma oluşturmak.
+
+Kritik Değişkenler:
+  ·Su Kalitesi ve Sıcaklığı: İdeal sıcaklık genellikle 90 ile 96 derece arasındadır.
+  ·Kahve-Su Oranı (Brew Ratio): Genellikle 1:15 (1 gram kahveye 15 ml su) ile 1:18 arasındadır.
+  ·Öğütme Boyutu: Demleme yöntemine uygunluk (örneğin, filtre kahve için orta, espresso için ince).
+  ·Demleme Süresi: Su ile kahvenin temas süresi (genellikle 2-4 dakika).
+  ·Başarı Kriteri: Demlenen kahvenin acı, ekşi veya zayıf olmaması; dengeli bir tada sahip olması.
+
+
+
+BAŞLA
+
+  1. MİKTAR BELİRLE: Kaç gram kahve kullanacağına karar ver. (Örn: 20 gram)
+  2. SUYU HESAPLA: Kahve miktarını 16 ile çarp. Bu, kullanacağın su miktarıdır (ml).
+  3. Suyu Isıt: Suyu 94°C'ye (veya 90-96°C arasına) getir.
+  4. ÖĞÜT: Kahveyi filtre demleme için orta-kaba boyutta taze öğüt.
+  5. Filtreyi Hazırla: Filtre kağıdını hazneye koy ve sıcak suyla ıslat (durula). Durulama suyunu dök.
+  6. ZAMANLAYICIYI BAŞLAT.
+  7. BLOOM SUYU DÖK: Kahve miktarının iki katı kadar suyu dök ve tüm kahveyi ıslat. (Örn: 20 gram kahve için 40 ml su.)
+  8. BLOOM BEKLE: 30 saniye bekle.
+  9. KALAN SUYU DÖK: Kalan su miktarını yavaşça, dairesel hareketlerle 3-4 seferde dök.
+  10. Her döküşten sonra yaklaşık 45 saniye bekle.
+  11. SÜRE KONTROL: Su tamamen süzüldüğünde toplam demleme süresi 4 dakikaya yakın olmalıdır.
+  12. SERVİS ET: Kahveyi fincana dök ve tadını çıkar.
+
+BİTİR
+
+
+
+Farklı Çözüm Yollarını Tartış
+Kahve demleme süreci için farklı yaklaşımlar mevcuttur.
+
+A. Değişken Odaklı Yaklaşım (Yukarıdaki Algoritma)
+  ·Odak Noktası: Oranlar, sıcaklık ve süre gibi bilimsel olarak kanıtlanmış ideal parametrelere sıkı sıkıya uymak.
+  ·Avantajı: Sürekli olarak tutarlı ve iyi sonuçlar verir. Öğrenme aşamasındaki bir kullanıcı için en ideal başlangıç noktasıdır.
+  ·Dezavantajı: Kahvenin çekirdek türü, kavrulma derecesi veya kişisel tat tercihlerindeki küçük sapmalara izin vermez.
+
+B. Deneye Dayalı Iteratif (Tekrarlamalı) Yaklaşım
+  ·Odak Noktası: Bir başlangıç noktasından (örneğin 1:16 oranı) yola çıkarak, tadım sonuçlarına göre tek bir değişkeni (örneğin sadece öğütme boyutunu) değiştirerek denemeler yapmak.
+  ·Pseudocode Önerisi: Bir DEĞERLENDIR fonksiyonu eklenir (Tadım: Acı mı, Ekşi mi, Dengeli mi?). EĞER sonuç "Acı" ise, bir sonraki döngüde ÖgütmeBoyutu daha kaba olarak ayarlanır ve demleme tekrar edilir.
+  ·Avantajı: Kullanıcının kişisel zevkine ve kullanılan spesifik çekirdeğin özelliklerine en uygun demlemeyi bulmasını sağlar.
+  ·Dezavantajı: İstenen sonuca ulaşmak daha uzun sürebilir ve çok fazla kahve israfına yol açabilir.
+
+C. Basitleştirilmiş Otomatik Makine Yaklaşımı
+  ·Odak Noktası: Süreçteki manuel adımları (dökme, bekleme) ortadan kaldırarak otomatik bir makinenin iş akışını modellemek.
+  ·Pseudocode Önerisi: Bloom ve Ana Demleme aşamalarını saniye saniye ayırmak yerine, sadece Makineyi_Başlat komutunu kullanıp, makinenin dahili sensörlerinin ideal sıcaklığı ve demleme hızını sağlamasını varsaymak.
+  ·Avantajı: Hız ve kullanım kolaylığına odaklanır.
+  ·Dezavantajı: Demleme kalitesi, tamamen makinenin tasarımına ve hassasiyetine bağlıdır; kullanıcı kontrolü minimumdur.
