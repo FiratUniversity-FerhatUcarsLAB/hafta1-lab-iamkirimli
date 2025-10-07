@@ -1,4 +1,45 @@
-Öğrenci No:
-AD-SOYAD:
+Öğrenci No: 250542027
+AD-SOYAD: Mehmet Ali Kırımlı
 
 Lütfen seçtiğiniz algoritmaya ait çözümü ve diğer isterleri aşağıya ekleyiniz:
+
+Girdiler (Input):
+  ·N (kişi sayısı, tam pozitif)
+  ·Pasta biçimi ve ölçüsü (dairesel, dikdörtgen, genel şekil)
+  ·Her kişinin tat/tercih fonksiyonu: pasta üzerinde hangi bölgelerin daha çok değerli olduğunu belirten bir yoğunluk (ör. çikolatalı kenarlar vs.)
+  ·Kesim limitleri (maks kesim sayısı, sadece düz kesim mi vs.)
+
+Çıktı (Output):
+  ·Paylaşım planı: her kişiye hangi parça(lar) verilecek (geometrik tanımla veya alan değeri ile)
+
+Kısıtlar / pratik notlar:
+  ·Dairesel pasta için eşit açıyla kesmek pratik ve hızlıdır.
+  ·Tercihler farklıysa eşit alan adaleti, bazı kişiler tarafından “adil” bulunmayabilir.
+  ·Envy-free çözümleri genelde interaktif protokoller veya ileri algoritmalar gerektirir.
+
+Algoritma: Pastayı Eşit Dağıtma
+1. Başla
+2. Açı_adimi = 360° / N
+3. Baş_açı = 0°
+4. For i = 1 to N:
+      slice_start = Baş_açı + (i-1) * Açı_adimi
+      slice_end   = Baş_açı + i * Açı_adimi
+      Tanımla dilim_i = sector(pasta_center, slice_start, slice_end)
+      Ata dilim_i -> Kişi i
+5. Bitir
+
+
+LLM Cevabı:
+Basit (equal-area) ile başlayıp, talepler farklıysa proportional/enfy-free protokollerine geç.
+Last Diminisher, Divide & Choose gibi klasik protokoller ödev için uygun—pseudocode halinde anlatılmalı.
+Gerçek uygulama için her kişinin değerleme fonksiyonunu belirtmeyi önerdi.
+
+
+Alternatif yollar — pratik öneriler & kıyas
+  ·Pratik en kolay: Eşit alan (dairesel açı/tepsi alanı eşitleme). Hızlı, herkes görür ve anlar. (Kullanışlı, adalet ölçütü = eşit alan)
+  ·Tercihler farklıysa: Last Diminisher (sıralı kesme/propozisyon) veya Divide & Choose (2 kişi) — insan odaklı ve adil hissiyatı yüksek.
+  ·Tam envy-free istiyorsan: 2 kişi kolay, 3 kişi Selfridge-Conway uygulanabilir, N>3 teorik prosedürler karmaşık.
+  ·Teknik/otomasyon: Eğer sayısal modelin varsa (her kişinin alan tercih yoğunluğu fonksiyonu), bu yoğunluk üzerinden optimizasyonla parçaları belirle (alan eşitleme w.r.t. değer yoğunluğu). Bu durumda matematiksel programlama (LP) veya bölge entegrali ile çalışılır.
+
+
+
