@@ -1,4 +1,41 @@
-Öğrenci No:
-AD-SOYAD:
+Öğrenci No: 250542027
+AD-SOYAD: Mehmet Ali Kırımlı
 
 Lütfen seçtiğiniz algoritmaya ait çözümü ve diğer isterleri aşağıya ekleyiniz:
+
+Amaç:
+  ·Bir sınıftaki öğrencilerin notlarını alıp, bu notları yüksekten düşüğe doğru sıralamak.
+  ·Bu işlem, sınav sonuçlarını analiz etmek, başarı sırasını görmek veya ortalama hesaplamaları için ön hazırlık yapmak amacıyla yapılır.
+
+Verilenler:
+  ·Öğrencilerin notlarını içeren bir liste (örnek: [75, 90, 60, 100, 85])
+
+İstenen:
+  ·Notların büyükten küçüğe sıralanmış hali (örnek: [100, 90, 85, 75, 60])
+
+Kısıtlar:
+  ·Notlar 0 ile 100 arasında olmalıdır.
+  ·Aynı notlara sahip öğrenciler olabilir (eşit değerler korunmalıdır).
+  ·Sıralama mantığı, notların karşılaştırılmasına dayalı olmalıdır (örneğin Bubble Sort, Selection Sort veya hazır bir sıralama fonksiyonu kullanılabilir — ama algoritmik mantık açıklanmalıdır).
+
+
+1. BAŞLA
+2. "n" öğrencinin notlarını içeren bir liste oluştur → NOTLAR = [ ]
+3. Kullanıcıdan öğrenci sayısını al → n
+4. 1’den n’e kadar tekrarla:
+       4.1 Her öğrencinin notunu al
+       4.2 NOTLAR listesine ekle
+5. NOTLAR listesini sırala:
+       5.1 Her eleman için diğer elemanlarla karşılaştır
+       5.2 Eğer mevcut not < karşılaştırılan not ise, yerlerini değiştir
+6. Sıralama tamamlandığında liste büyükten küçüğe olacak
+7. "Sıralanmış notlar:" başlığıyla NOTLAR listesini yazdır
+8. BİTİR
+
+
+LLM Cevabı: “Bubble Sort küçük veri setlerinde daha kolay anlaşılır bir yöntemdir, çünkü bitişik elemanları karşılaştırarak ilerler.
+Selection Sort ise her turda minimum veya maksimum değeri bulup başa koyar.
+Eğitim amaçlı ödevlerde Bubble Sort, anlaşılabilirlik açısından daha uygundur.”
+
+
+
